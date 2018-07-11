@@ -1,0 +1,148 @@
+$color1: #13719B;
+$color2: #e8e9ee;
+$color3: #2d3742;
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Oswald, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+  color: $color3;
+  a {
+    color: $color3;
+    &:hover {
+      color: $color1;
+    }
+    &.active {
+      color: $color1;
+    }
+  }
+}
+
+header {
+  background: #FFF;
+  .logo-header {
+    height: 150px;
+    background-size: contain;
+    background: url("../img/logo.jpg") no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .bloc-header {
+    padding: 20px;
+    margin: 20px 0;
+    i {
+      font-size: 25px;
+      background: #FFF;
+      color: $color1;
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      padding: 7px;
+      margin-top: 2px;
+      border-radius: 50%;
+      float: left;
+      margin-right: 5px;
+      border: 1px solid lighten($color1, 50);
+    }
+    p {
+      cursor: default;
+      width: 100%;
+      background: #FFF;
+      margin-bottom: 2px;
+      font-size: 0.8em;
+      color: darken($color1, 10);
+      &:hover {
+        color: $color1;
+      }
+    }
+    &:hover {
+      i {
+        background: $color1;
+        color: #FFF;
+      }
+    }
+  }
+}
+
+nav {
+  text-transform: uppercase;
+  background: lighten($color3, 75);
+  font-size: 0.9em;
+  ul {
+    li {
+      i {
+      }
+      padding: 10px;
+    }
+  }
+}
+
+section {
+  min-height: 70vh;
+  .line {
+    min-height: 10vh;
+    padding: 10vh 0;
+    &:nth-child(even) {
+      background: lighten($color3, 75);
+    }
+    &:nth-child(odd) {
+      background: #FFF;
+    }
+    p {
+      text-align: justify;
+    }
+
+    .action {
+      i {
+        color: $color1;
+        font-size: 40px;
+        float: left;
+        height: 100%;
+        padding-right: 20px;
+      }
+      h4 {
+        color: #000;
+      }
+      p {
+        text-align: left;
+      }
+    }
+    &.contact {
+      padding: 0;
+.map{
+  padding: 0 !important;
+}
+      h2 {
+        color: $color1;
+      }
+      iframe {
+        height: 100%;
+        width: 100%;
+        border: none;
+      }
+      form {
+        margin-left: 10vw;
+        padding: 10vh 0;
+        label {
+          width: 100%;
+        }
+        input {
+          width: 100%;
+        }
+        textarea {
+          width: 100%;
+          min-height: 150px;
+        }
+      }
+    }
+
+  }
+}
+
+footer {
+  background: $color1;
+  height: 150px;
+}
