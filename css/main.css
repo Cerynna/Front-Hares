@@ -2,6 +2,18 @@ html {
   padding: 0;
   margin: 0; }
 
+.myButton {
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #adb1c3;
+  color: #adb1c3;
+  cursor: pointer; }
+  .myButton:hover {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.32);
+    border: 1px solid #13719B;
+    color: #13719B; }
+
 body {
   font-family: Oswald, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
   color: #2d3742; }
@@ -52,15 +64,100 @@ header {
 nav {
   text-transform: uppercase;
   background: #f5f7f8;
-  font-size: 0.9em; }
+  font-size: 0.9em;
+  height: 60px; }
+  nav .burgerMenu {
+    width: 50px;
+    height: 50px;
+    margin-top: 5px;
+    text-align: center;
+    padding: 3px;
+    font-size: 30px;
+    border-radius: 5px;
+    border: 1px solid #adb1c3;
+    color: #adb1c3;
+    cursor: pointer; }
+    nav .burgerMenu:hover {
+      box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.32);
+      border: 1px solid #13719B;
+      color: #13719B; }
   nav ul li {
     padding: 10px; }
+  nav .nav-item .nav-dropdown {
+    display: none; }
+    nav .nav-item .nav-dropdown ul {
+      list-style: none;
+      padding: 0; }
+      nav .nav-item .nav-dropdown ul li {
+        padding: 0; }
+  nav .nav-item.drop1open {
+    background: #c8d0d9;
+    z-index: 1010; }
+    nav .nav-item.drop1open a {
+      color: #e4f4fc; }
+    nav .nav-item.drop1open .nav-dropdown li {
+      padding: 10px 5px; }
+      nav .nav-item.drop1open .nav-dropdown li a {
+        font-size: 0.9em; }
+        nav .nav-item.drop1open .nav-dropdown li a:hover {
+          color: black;
+          text-decoration: none; }
+  nav .nav-item #drop1 {
+    z-index: 1010; }
+  nav .nav-item.drop2open {
+    background: #8b9db0;
+    z-index: 1020; }
+    nav .nav-item.drop2open a {
+      color: #89d1f1; }
+    nav .nav-item.drop2open .nav-dropdown li {
+      padding: 10px 5px; }
+      nav .nav-item.drop2open .nav-dropdown li a {
+        font-size: 0.9em; }
+        nav .nav-item.drop2open .nav-dropdown li a:hover {
+          color: black;
+          text-decoration: none; }
+  nav .nav-item #drop2 {
+    z-index: 1020; }
+  nav .nav-item.drop3open {
+    background: #566a7f;
+    z-index: 1030; }
+    nav .nav-item.drop3open a {
+      color: #2fade5; }
+    nav .nav-item.drop3open .nav-dropdown li {
+      padding: 10px 5px; }
+      nav .nav-item.drop3open .nav-dropdown li a {
+        font-size: 0.9em; }
+        nav .nav-item.drop3open .nav-dropdown li a:hover {
+          color: #082f40;
+          text-decoration: none; }
+  nav .nav-item #drop3 {
+    z-index: 1030; }
+  nav .nav-item.drop4open {
+    background: #2d3742;
+    z-index: 1040; }
+    nav .nav-item.drop4open a {
+      color: #13719b; }
+    nav .nav-item.drop4open .nav-dropdown li {
+      padding: 10px 5px; }
+      nav .nav-item.drop4open .nav-dropdown li a {
+        font-size: 0.9em; }
+        nav .nav-item.drop4open .nav-dropdown li a:hover {
+          color: #13719b;
+          text-decoration: none; }
+  nav .nav-item #drop4 {
+    z-index: 1040; }
+  nav .nav-item i {
+    float: right;
+    margin-left: 10px;
+    font-size: 18px; }
 
 section {
   min-height: 70vh; }
   section .line {
     min-height: 10vh;
     padding: 10vh 0; }
+    section .line img {
+      /*outline: 2px solid $color1;*/ }
     section .line:nth-child(even) {
       background: #f5f7f8; }
     section .line:nth-child(odd) {
@@ -77,29 +174,49 @@ section {
       color: #000; }
     section .line .action p {
       text-align: left; }
-    section .line.contact {
-      padding: 0; }
-      section .line.contact .map {
-        padding: 0 !important; }
-      section .line.contact h2 {
+    section .line.contact h2 {
+      color: #13719B; }
+    section .line.contact iframe {
+      height: 100%;
+      width: 100%;
+      border: 2px solid #FFF;
+      border-radius: 5px; }
+      section .line.contact iframe:hover {
+        border: 2px solid #13719B;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.32); }
+    section .line.contact form label {
+      width: 100%; }
+    section .line.contact form input {
+      width: 100%;
+      border: 1px solid #a9b6c5;
+      padding: 5px 10px;
+      border-radius: 5px; }
+      section .line.contact form input:focus {
+        outline: none;
+        border: 1px solid #13719B;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.32);
         color: #13719B; }
-      section .line.contact iframe {
-        height: 100%;
-        width: 100%;
-        border: none; }
-      section .line.contact form {
-        margin-left: 10vw;
-        padding: 10vh 0; }
-        section .line.contact form label {
-          width: 100%; }
-        section .line.contact form input {
-          width: 100%; }
-        section .line.contact form textarea {
-          width: 100%;
-          min-height: 150px; }
+    section .line.contact form textarea {
+      width: 100%;
+      min-height: 150px;
+      border: 1px solid #a9b6c5;
+      padding: 5px 10px;
+      border-radius: 5px; }
+      section .line.contact form textarea:focus {
+        outline: none;
+        border: 1px solid #13719B;
+        box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.32);
+        color: #13719B; }
 
 footer {
-  background: #13719B;
-  height: 150px; }
+  background: #2d3742;
+  color: #e8e9ee;
+  min-height: 150px;
+  padding: 10vh; }
+  footer a {
+    color: #e8e9ee; }
+  footer ul {
+    list-style: none;
+    padding: 0; }
 
 /*# sourceMappingURL=main.css.map */

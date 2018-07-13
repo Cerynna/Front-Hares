@@ -50,8 +50,10 @@
             </div>
             <div class="col-2">
                 <div class="bloc-header">
+                    <div class="myButton">
+                        Connexion
+                    </div>
 
-                    <button type="button" class="btn btn-outline-secondary">Connexion</button>
                 </div>
             </div>
         </div>
@@ -60,29 +62,67 @@
 
 </header>
 <nav>
-    <ul class="nav container">
-        <li class="nav-item">
-            <a class="nav-link active" href="#"><i class="fa fa-home"></i> Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-    </ul>
+    <div class="row">
+        <div class="col">
+            <ul class="nav container">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#"><i class="fa fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item drop" data-dropNav="drop1">
+                    <a class="nav-link" href="#">Link <i class="fa fa-chevron-down"></i></a>
+                    <div class="nav-dropdown" id="drop1">
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item drop" data-dropNav="drop2">
+                    <a class="nav-link" href="#">Link <i class="fa fa-chevron-down"></i></a>
+                    <div class="nav-dropdown" id="drop2">
+                        <ul>
+                            <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet,</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item drop" data-dropNav="drop3">
+                    <a class="nav-link" href="#">Link <i class="fa fa-chevron-down"></i></a>
+                    <div class="nav-dropdown" id="drop3">
+                        <ul>
+                            <li><a href="#">Lien</a></li>
+                            <li><a href="#">Lien</a></li>
+                            <li><a href="#">Lien</a></li>
+                            <li><a href="#">Lien</a></li>
+                            <li><a href="#">Lien</a></li>
+                        </ul>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+        <div class="col-2 text-right">
+            <div class="burgerMenu">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
 </nav>
 <section>
     <div class="line">
         <div class="container">
             <div class="row">
-                <div class="col" data-aos="fade-right">
+                <div class="col" data-aos="fade-right" data-aos-duration="2000">
                     <img src="img/image1.jpg" alt="" class="">
                 </div>
-                <div class="col">
+                <div class="col" data-aos="zoom-in" data-aos-duration="1500">
                     <h3>Lorem ipsum dolor sit amet,</h3>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae cumque, qui quia
@@ -95,8 +135,9 @@
                         enim eum inventore natus officia quibusdam.
                     </p>
                     <div class="text-center">
-
-                        <button type="button" class="btn btn-outline-secondary">En Savoir Plus</button>
+                        <div class="myButton">
+                            En Savoir Plus
+                        </div>
                     </div>
                 </div>
             </div>
@@ -104,8 +145,8 @@
     </div>
     <div class="line">
         <div class="container">
-            <div class="row action">
-                <div class="col">
+            <div class="row action" >
+                <div class="col" data-aos="fade-right" data-aos-duration="1000">
                     <i class="fa fa-user"></i>
                     <h4>
                         Lorem ipsum dolor sit amet
@@ -116,7 +157,7 @@
                         Consectetur provident quaerat rerum!
                     </p>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="fade-up" data-aos-duration="500">
                     <i class="fa fa-comment"></i>
                     <h4>
                         Lorem ipsum dolor sit amet
@@ -127,7 +168,7 @@
                         Consectetur provident quaerat rerum!
                     </p>
                 </div>
-                <div class="col">
+                <div class="col" data-aos="fade-left" data-aos-duration="1000">
                     <i class="fa fa-check"></i>
                     <h4>
                         Lorem ipsum dolor sit amet
@@ -143,10 +184,11 @@
         </div>
     </div>
     <div class="line contact">
-        <div class="container-fluid">
-            <div class="row">
+        <div class="container">
+            <div class="row" >
 
-                <div class="col-6">
+                <div class="col-6" data-aos="slide-right"
+                     data-aos-duration="900">
                     <form class="row">
                         <div class="col-12">
                             <h2>Nous Contacter</h2>
@@ -173,11 +215,18 @@
                             <label for="message">Message</label>
                             <textarea name="message" id="message"></textarea>
                         </div>
+                        <div class="col-12">
+                            <div class="myButton">
+                                Envoyer
+                            </div>
+                        </div>
                     </form>
 
 
                 </div>
-                <div class="col map">
+                <div class="col map" data-aos="zoom-in-down"
+                     data-aos-duration="2000"
+                     data-aos-anchor-placement="top-center">
 
                     <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
                             src="https://www.openstreetmap.org/export/embed.html?bbox=4.6830081939697275%2C45.73931563664794%2C4.826345443725587%2C45.79027007360134&amp;layer=mapnik&amp;marker=45.764798672765274%2C4.754676818847656"></iframe>
@@ -210,7 +259,7 @@
     </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
         integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
@@ -219,6 +268,61 @@
 
 <script>
     AOS.init();
+
+
+    $('.nav-item').on('click', function () {
+        let idDrop = $(this).data("dropnav");
+        let divItem = $(this);
+        if ($(this).hasClass(idDrop + "open") === false) {
+
+            $($(this).find("i")[0]).css("transform", "rotate(180deg)");
+            $(this).addClass(idDrop + "open");
+            $(' #' + idDrop).slideDown(800);
+        }
+        else {
+            $($(this).find("i")[0]).css("transform", "rotate(0deg)");
+
+            $(' #' + idDrop).slideUp(900, function () {
+                divItem.removeClass(idDrop + "open");
+            });
+
+
+        }
+
+
+    })
+    /*.on('mouseleave', function () {
+            let idDrop = $(this).data("dropnav");
+            $($(this).find("i")[0]).css("transform", "rotate(0deg)");
+            $(this).removeClass(idDrop + "open");
+            $(' #' + idDrop).slideUp(2500);
+        })*/
+    $('.burgerMenu').on('click', function () {
+        let allDropNav = $('.nav-item.drop')
+        allDropNav.map(function (item) {
+            let idDrop = $(allDropNav[item]).data("dropnav");
+            if ($(this).hasClass(idDrop + "open") === false) {
+
+                $('.nav-item.drop').find("i").css("transform", "rotate(180deg)");
+                $(allDropNav[item]).addClass(idDrop + "open");
+                $(' #' + idDrop).slideDown(800);
+            }
+            else {
+                $('.nav-item.drop').find("i").css("transform", "rotate(0deg)");
+
+                $(' #' + idDrop).slideUp(900, function () {
+                    $(allDropNav[item]).removeClass(idDrop + "open");
+                });
+
+
+            }
+
+
+        })
+
+
+    })
+
 </script>
 
 </body>
