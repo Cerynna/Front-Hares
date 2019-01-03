@@ -1,0 +1,24 @@
+{
+  "name": "hares",
+  "version": "1.0.0",
+  "description": "Official website of Hares expertise",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cerynna/Front-Hares.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cerynna/Front-Hares/issues"
+  },
+  "homepage": "https://github.com/Cerynna/Front-Hares#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
